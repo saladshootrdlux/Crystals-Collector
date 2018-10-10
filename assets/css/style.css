@@ -1,0 +1,26 @@
+.crystal-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .backgroundImg {
+      background-image: url(/unit-4-game/assets/images/caveBackground.jpg);
+      width: 100%; 
+  }
+
+.masthead {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+body {
+    background-color: teal;
+}
+
+#topbar {
+    width: 100%;
+    color: white;
+}

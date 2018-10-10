@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Crystals Collector!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+    </div>
+    <div class="container, masthead" id="topbar">
+        <div class="row">
+            <div class="col-sm-12, col-md-10">
+                <h1> Crystals Collector! </h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12, col-md-10" style="color: white">
+                <p>You will be given a random number at the start of the game.</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                    to your
+                    total score.</p>
+                <br>
+                <p>You win the game by matching your total score to random number, you lose the game if your total
+                    score
+                    gets
+                    above the random number.</p>
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <p>Target Number: </p>
+                    <div class="col-md-4 target-number">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4 win-lose-counter">
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+            <div class="row">
+                <p>Current Score:</p> 
+                <div class="col-md-4 score-number">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 crystal-images" style="padding: 20px;">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12, col-md-12">
+                        <!-- Note that this div is now empty. We will fill it dynamically -->
+                        <div id="crystals">
+
+                        </div>
+
+                        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script type="text/javascript" src="assets/javascript/game.js"></script>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
