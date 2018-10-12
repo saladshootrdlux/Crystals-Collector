@@ -3,24 +3,85 @@
     height: 200px;
   }
 
-  .backgroundImg {
-      background-image: url(/unit-4-game/assets/images/caveBackground.jpg);
-      width: 100%; 
-  }
-
 .masthead {
     text-align: center;
 }
 
-h1 {
-    font-size: 30px;
+#title {
+    font-size: 50px;
+    font-weight: bold;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
 
-body {
-    background-color: teal;
+#background {
+    background-image: url("../images/caveBackground.jpg");
+    
 }
 
 #topbar {
     width: 100%;
     color: white;
+    background-color: purple;
+    text-align: center;
+    width: 100%;
+    border-bottom: 8px solid #4aaaa5;
+    
+
+}
+
+#instructions {
+    color: white;
+    background-color: brown;
+    padding: 20px;
+    box-shadow: 4px 6px #888888;
+}
+
+.scoreBox {
+    padding: 20px;
+    margin-left: 0px;
+    text-indent: 20px;
+    color: white;
+    background: green;
+    box-shadow: 4px 6px #888888;
+}
+
+.crystal-images {
+    padding: 20px;
+    margin-left: 20px;
+    width: 100%;
+    
+}
+
+.crystal-images:hover {
+    background-color: blue;
+}
+
+/* How do I get these images to populat independently from the array? */
+
+#footer {
+    background-color: purple;
+    border-top: 8px solid orange;
+    width: 100%;
+}
+
+#Copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    top: 15px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
