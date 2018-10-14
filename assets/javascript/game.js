@@ -48,13 +48,37 @@ function fullReset () {
     resetCrystals ();
 }
 
+// These two functions are jQuery versions of the JavaScript alert().
+// They push text on a timer to HTML to notify the user when they have won or lost the game.
+
+function displayAlertMessageWin(message) {
+    var timeOut = 5
+    message = ("You win!");
+    $('#messageBox').text(message).fadeIn()
+    $('#messageBox').css("display", "block")
+    setTimeout(function() {
+    $('#messageBox').fadeOut()
+    $('#messageBox').css("display", "none")
+    }, timeOut * 500);
+    }
+
+function displayAlertMessageLose(message) {
+    var timeOut = 5
+    message = ("You lose!");
+    $('#messageBox').text(message).fadeIn()
+    $('#messageBox').css("display", "block")
+    setTimeout(function() {
+    $('#messageBox').fadeOut()
+    $('#messageBox').css("display", "none")
+    }, timeOut * 500);
+    }   
 // All resets are triggered during the initial page load to prepare for the first game.
 
 randomTargetNumber();
 resetHTML ();
 resetCrystals ();
 
-// These functions are responsible for the actual game mechanics and control what happens when crystals are clicked.
+// These functions are responsible for the game mechanics.
 // If the user matches the number, an alert is raised "You win!".
 // If the user goes over the target numer, an alert is raised "You lose!".
 
@@ -64,16 +88,16 @@ function crystalClick () {
     $(".score-number").html(counter);
     if (counter == targetNumber) {
         wins++;
-        alert("You win!");
+        displayAlertMessageWin();
         fullReset();
     }
     else if (counter > targetNumber) {
         losses++;
-        alert("You lose!");
+        displayAlertMessageLose();
         fullReset();
     };
 };
 
-// This is the global event listener which is listening for mouse clicks on crystals.
 
+// This is the global event listener which is listening for mouse clicks on crystals.
 $(document).on("click", ".crystal", crystalClick);
