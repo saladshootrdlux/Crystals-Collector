@@ -40,7 +40,7 @@
 .scoreBox {
     padding: 20px;
     margin-left: 0px;
-    text-indent: 20px;
+    text-indent: 11px;
     color: white;
     background: green;
     box-shadow: 4px 6px #888888;
@@ -52,12 +52,6 @@
     width: 100%;
     
 }
-
-/* .crystal-images:hover {
-    background-color: blue;
-} */
-
-/* How do I get these images to populat independently from the array? */
 
 #footer {
     background-color: purple;
@@ -85,3 +79,4 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
